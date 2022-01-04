@@ -6,9 +6,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+           // EjemploCsharp();
+
+           
+           //Declaración de objetos
+            Persona persona = new Persona();
+            persona.Nombres = "Hugo Felipe";
+            persona.Apellidos = "Torrico Márquez";
+            persona.Edad = 33;
+
+
+            Persona persona2 = new Persona
+            {
+                Nombres = "Reyna Victoria",
+                Apellidos = "Torrico Gamarra",
+                Edad = 5
+            };
+
+
+            Console.WriteLine(persona.DevolverNombresCompletos());
+            Console.WriteLine(persona2.DevolverNombresCompletos());
+
+            Console.WriteLine("Hello Tecsup!");
+            Console.Read();
+        }
+
+        static private void EjemploCsharp()
+        {
 
             //TipoDato NombreVariable;
             //NombreVariable=valor;
+
+
+            //Declaración de Variables
             int grado;
             grado = 3;
 
@@ -27,9 +57,9 @@ namespace ConsoleApp1
             char inicial;
             inicial = 't';
 
+            //Condicionales
 
-
-            if (edad>18)
+            if (edad > 18)
             {
                 Console.WriteLine("Mayo de Edad");
             }
@@ -57,6 +87,7 @@ namespace ConsoleApp1
                     break;
             }
 
+            //Bucles
 
             int numero = 5;
             int resultado = 0;
@@ -64,11 +95,11 @@ namespace ConsoleApp1
             for (int i = 0; i < 12; i++)
             {
                 multiplicador = i + 1;
-                resultado=numero*multiplicador;
+                resultado = numero * multiplicador;
                 Console.WriteLine(String.Concat(numero, " x ", multiplicador, "=", resultado));
             }
             int j = 0;
-            while (resultado<61)
+            while (resultado < 61)
             {
                 j++;
                 multiplicador = j + 1;
@@ -76,11 +107,6 @@ namespace ConsoleApp1
                 Console.WriteLine(String.Concat(numero, " x ", multiplicador, "=", resultado));
 
             }
-
-
-
-            Console.WriteLine("Hello Tecsup!");
-            Console.Read();
         }
     }
 }
