@@ -27,6 +27,9 @@ namespace ConsoleApp1
             Console.WriteLine(persona.DevolverNombresCompletos());
             Console.WriteLine(persona2.DevolverNombresCompletos());
 
+
+            //Llamar a las funciones que acaban de crear
+
             Console.WriteLine("Hello Tecsup!");
             Console.Read();
         }

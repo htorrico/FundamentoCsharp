@@ -25,6 +25,10 @@ namespace ConsoleApp1
             return resultado;
         }
 
+        //Crear una función que me retorne si es mayor de edad o menor de edad
+
+
+        //Crear otro función que retorne el promedio de las 3 notas.
 
 
     }
